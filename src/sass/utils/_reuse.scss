@@ -1,0 +1,10 @@
+#about_detail {
+  padding-top: 18rem;
+  & span {
+    color: $white;
+    opacity: 0.6;
+  }
+  & h3 {
+    color: $white;
+  }
+}

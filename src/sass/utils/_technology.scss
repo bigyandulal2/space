@@ -1,0 +1,64 @@
+$image: "/assets/technology/background-technology-desktop.jpg";
+
+#technology {
+  @include screen($img: $image, $padding: 0 0 0 8rem);
+  height: 100vh;
+  &_about {
+    margin-left: 2rem;
+  }
+  &_item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    place-items: center;
+    padding-top: 2vh;
+    gap: 2rem;
+    &_numbers {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      & li {
+        background: transparent;
+        border: 1px solid white;
+        height: 50px;
+        width: 50px;
+        border-radius: 1000px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        & span {
+          font-size: 1.9rem;
+          color: white;
+          position: absolute;
+          top: 12px;
+          left: 20px;
+        }
+      }
+    }
+    &_details {
+      color: $light_blue;
+      text-transform: uppercase;
+      & h5 {
+        font-size: 2rem;
+      }
+      & h2 {
+        font-size: 5rem;
+        color: $white;
+      }
+      & p {
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        line-height: 1.9;
+      }
+    }
+    &_imgbox {
+      width: 400px;
+      height: 400px;
+      justify-self: end;
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

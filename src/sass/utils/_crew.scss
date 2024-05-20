@@ -1,0 +1,52 @@
+$image: "/assets/crew/background-crew-desktop.jpg";
+
+#crew {
+  @include screen($img: $image);
+  height: 100vh;
+  &_details {
+    display: grid;
+    gap: 1rem;
+  }
+  &_detail {
+    padding: 2rem 0;
+    text-transform: uppercase;
+    & h4 {
+      font-size: 4rem;
+      color: $light_blue;
+    }
+    & h2 {
+      font-size: 4rem;
+      margin: 1rem 0;
+    }
+    & p {
+      font-size: 1.5rem;
+      line-height: 1.7;
+      color: $light_blue;
+      letter-spacing: 1px;
+    }
+  }
+  &_carousel {
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+    & li {
+      height: 20px;
+      width: 20px;
+      border-radius: 1000px;
+      background-color: white;
+      opacity: 0.6;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+  &_imgbox {
+    height: 96vh;
+    width: 37vw;
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

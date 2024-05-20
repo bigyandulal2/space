@@ -1,0 +1,53 @@
+@media screen and (max-width: 39em) {
+  //
+  #crew {
+    grid-template-rows: 1fr 2fr;
+    padding: 2rem 2rem;
+    &_imgbox {
+      height: 322px;
+    }
+  }
+}
+
+@media screen and (max-width: 25em) {
+  //400px
+  html {
+    font-size: 8px;
+  }
+  #home_detail {
+    gap: 4rem;
+  }
+  #about_detail {
+    & h3 {
+      font-size: 2rem;
+    }
+    & span {
+      font-size: 2rem;
+    }
+  }
+  // destination
+  #destination {
+    padding: 0 4rem;
+    &_item {
+      gap: 1rem;
+      &_details {
+        &_description {
+          & h2 {
+            font-size: 3rem;
+          }
+        }
+      }
+      &_imgbox {
+        height: 200px;
+        width: 200px;
+        & img {
+          height: 90%;
+          width: 90%;
+        }
+      }
+    }
+  }
+  #technology_item_details h2 {
+    font-size: 2rem;
+  }
+}

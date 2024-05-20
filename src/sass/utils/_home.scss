@@ -1,0 +1,56 @@
+$size: 250px;
+$image: "/assets/home/background-home-desktop.jpg";
+#home {
+  @include screen($img: $image);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+  &_detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 2rem;
+    margin: 25rem 0;
+
+    &_col1 {
+      text-transform: uppercase;
+
+      & h3 {
+        font-size: 3rem;
+        color: $light_blue;
+      }
+      & h1 {
+        font-size: 12rem;
+        letter-spacing: 3.2px;
+        display: inline-block;
+        margin-left: 2rem;
+        line-height: 1.6;
+      }
+      & p {
+        font-size: 1.4rem;
+        color: $light_blue;
+      }
+    }
+    &_col2 {
+      background-color: white;
+      opacity: 0.6;
+      border-radius: 4000px;
+      height: $size;
+      width: $size;
+      align-self: center;
+      justify-self: end;
+      text-align: center;
+      color: black;
+      font-size: 4rem;
+      position: relative;
+      cursor: pointer;
+      & p {
+        position: absolute;
+        top: 88px;
+        left: 55px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
